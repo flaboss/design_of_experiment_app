@@ -1,4 +1,5 @@
 flake8
+pylint
 black
 matplotlib==3.0.3
 simpleDOE==1.0
