@@ -1,11 +1,15 @@
+PYTHON_INTERPRETER = python3
+
 install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
 
-test:
+test_environment:
+	$(PYTHON_INTERPRETER) test_environment.py
 
 format:
 	black *.py
 	
 lint:
-	flake8 *.py
+	pylint --disable=R,C *.py
+	#flake8 *.py
