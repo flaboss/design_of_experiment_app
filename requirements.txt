@@ -1,0 +1,8 @@
+flake8
+black
+matplotlib==3.0.3
+simpleDOE==1.0
+scipy
+pandas
+numpy
+streamlit
