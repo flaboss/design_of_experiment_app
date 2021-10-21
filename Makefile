@@ -11,5 +11,5 @@ format:
 	black *.py
 	
 lint:
-	pylint --disable=R,C *.py
-	#flake8 *.py
+	#pylint --disable=R,C *.py
+	flake8 *.py
